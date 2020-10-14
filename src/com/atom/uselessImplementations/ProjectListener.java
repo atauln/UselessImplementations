@@ -27,7 +27,7 @@ public class ProjectListener implements Listener {
 			ItemStack ironLeggings = new ItemStack(Material.IRON_LEGGINGS);
 			ItemStack ironBoots = new ItemStack(Material.IRON_BOOTS);
 			
-			playerJoined.getInventory().addItem(ironPickaxe, ironSword, ironAxe, ironShovel, baseFood, ironHelm, ironLeggings, ironBoots);
+			playerJoined.getInventory().addItem(ironPickaxe, ironSword, ironAxe, ironShovel, baseFood, ironHelm, ironChest, ironLeggings, ironBoots);
 		}
 	}
 	
