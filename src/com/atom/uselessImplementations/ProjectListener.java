@@ -5,9 +5,11 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.AnimalTamer;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.inventory.ItemStack;
 
 public class ProjectListener implements Listener {
 	@EventHandler
@@ -19,5 +21,10 @@ public class ProjectListener implements Listener {
 	@EventHandler
 	public void EntityTameEvent(LivingEntity tamed, AnimalTamer owner) {
 		Bukkit.broadcastMessage(owner.getName() + " just tamed " + tamed.getName() + "!");
+	}
+	
+	@EventHandler
+	public void PlayerItemConsumeEvent(Player player, ItemStack item) {
+		player.sendMessage("You consumed a " + item + ".");
 	}
 }
