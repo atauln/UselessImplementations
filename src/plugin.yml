@@ -1,0 +1,6 @@
+name: UselessImplementations
+main: com.atom.uselessImplementations.Main
+version: v1.0
+description: Adds on a LOAD of useless enhancements.
+api-version: 1.16
+commands: 
