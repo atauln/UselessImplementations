@@ -46,4 +46,9 @@ public class ProjectListener implements Listener {
 	public void PlayerItemConsumeEvent(Player player, ItemStack item) {
 		player.sendMessage("You consumed a " + item + ".");
 	}
+	
+	@EventHandler
+	public void PlayerArmorStandManipulateEvent() {
+		
+	}
 }
